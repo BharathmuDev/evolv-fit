@@ -1,0 +1,37 @@
+.Calories__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-size: 16px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.target {
+  font-size: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.Icon {
+  height: 15px;
+  width: 36px;
+  background-color: #101317;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calories__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
