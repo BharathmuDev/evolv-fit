@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import Vector from "..//Icons/vector.js";
-import Nutrition from "..//Icons/Nutrition.js";
-// import { CgGym } from 'react-icons/cg';
+import Vector from "../Icons/vector.js";
+import Nutrition from "../Icons/Nutrition.js";
+import Gym from "../Icons/Gym.js";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,9 @@ const Navbar = () => {
         <div className="navbar__text">Steps</div>
       </div>
       <div className="workout_container">
-        <div> </div>
+        <div>
+         
+        </div>
         <div className="navbar__text"> Workout</div>
       </div>
       <div className="nutrition_container">
