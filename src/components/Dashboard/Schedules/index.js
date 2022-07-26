@@ -12,18 +12,18 @@ const index = () => {
           <div>
             <Person />
           </div>
-          <div>15 Oct</div>
+          <div className="date">15 Oct</div>
         </div>
         <div className="Upcoming_events">
           <div>
             <Calendar />
           </div>
-          <div>22 Oct</div>
+          <div className="date">22 Oct</div>
         </div>
       </div>
 
-      <div className="Schedules_arrow">
-        <div>
+      <div className="Schedules_arrowbox">
+        <div className="Schedules_arrow" >
           <Arrow />
         </div>
       </div>

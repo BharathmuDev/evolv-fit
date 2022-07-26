@@ -20,8 +20,14 @@
   background-color: #1e262f;
   margin-top: 71px;
   margin-left: 18px;
+  display: flex;
 }
 
 .dashboard__user {
   padding: 1.2rem;
+}
+
+.Dashboard__notification {
+    margin-left: 850px;
+    margin-top: 20px;
 }

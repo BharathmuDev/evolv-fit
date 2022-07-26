@@ -1,0 +1,12 @@
+
+.Notification_container {
+    height: 40px;
+    width: 40px;
+    background-color: #36F5C7;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
