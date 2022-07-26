@@ -1,17 +1,27 @@
 import React from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import ".//index.css";
+import stepsImage from "../../../assets/stepsImage.png";
+import NegativeIcon from "../../Icons/NegativeIcon.js";
+import PlusIcon from "../../Icons/PlusIcon.js";
 
-const index = () => {
+const Steps = () => {
   return (
-    <div>
-        <div style={{ width: 80, height: 80 }}>
-            <CircularProgressbar text={"2547"} />
+    <div className='Steps__container'>
+        <div>
+            <img src={stepsImage} alt="steps" height={"50px"} width={"50px"} />
         </div>
-
-        <div></div>
+        <div className="Steps__info">
+        <div className="Icon">
+          <PlusIcon />
+        </div>
+        <div className="number">2.5K</div>
+        <div className="target">target</div>
+        <div className="Icon">
+          <NegativeIcon />
+        </div>
+      </div>
     </div>
-    
   )
 }
 
-export default index
+export default Steps;

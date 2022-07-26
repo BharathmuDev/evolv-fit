@@ -1,6 +1,7 @@
 .user_container {
     display: flex;
     gap: 19px;
+    margin-left: 11px;
 }
 
 .user_info {
