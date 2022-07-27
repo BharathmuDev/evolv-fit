@@ -28,9 +28,8 @@
     border-radius: 10px;
     background-color: #101317;
     margin-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Schedules_arrow {
-    margin-left: 11px;
-    margin-top: 20px;
-}
