@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Vector from "../Icons/vector.js";
 import Nutrition from "../Icons/Nutrition.js";
-import Gym from "../Icons/Gym.js";
+// import Gym from "../Icons/Gym.js";
 
 const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
       <div className="workout_container">
         <div>
-         
+          {/* <Gym /> */}
         </div>
         <div className="navbar__text"> Workout</div>
       </div>

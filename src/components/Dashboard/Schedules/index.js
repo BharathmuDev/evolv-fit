@@ -4,7 +4,7 @@ import Person from "../../Icons/Person.js";
 import Calendar from "../../Icons/Calendar.js";
 import Arrow from "../../Icons/Arrow";
 
-const index = () => {
+const index = (props) => {
   return (
     <div className="schedules_container">
       <div className="Scheddule_events">
@@ -21,9 +21,8 @@ const index = () => {
           <div className="date">22 Oct</div>
         </div>
       </div>
-
       <div className="Schedules_arrowbox">
-        <div className="Schedules_arrow" >
+        <div>
           <Arrow />
         </div>
       </div>

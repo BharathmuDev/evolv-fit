@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import NotificationIcon from "../../Icons/Notification.js";
 
-const Notification = () => {
+const Notification = (props) => {
   return (
     <div className="Notification_container">
       <NotificationIcon />
