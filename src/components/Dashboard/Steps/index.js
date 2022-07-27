@@ -1,26 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import ".//index.css";
 import stepsImage from "../../../assets/stepsImage.png";
 import NegativeIcon from "../../Icons/NegativeIcon.js";
 import PlusIcon from "../../Icons/PlusIcon.js";
+import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
-const Steps = () => {
+const Steps = (props) => {
   const [counter, setCounter] = useState(4);
 
   function incrementCount() {
-    setCounter(prevCount => prevCount + 1);
-    };
-  
+    setCounter((prevCount) => prevCount + 0.5);
+  }
+
   function decrementCount() {
-    setCounter(prevCount => prevCount - 1);
-  };
+    setCounter((prevCount) => (prevCount === 0 ? prevCount : prevCount - 0.5));
+  }
 
   return (
-    <div className='Steps__container'>
-        <div>
-            <img src={stepsImage} alt="steps" height={"50px"} width={"50px"} />
-        </div>
-        <div className="Steps__info">
+    <div className="Steps__container">
+      <div style={{ height: "60px", width: "60px" }}>
+        <CircularProgressbarWithChildren
+          value="60"
+          styles={buildStyles({
+            pathColor: "#7FD18C",
+          })}
+        >
+          <h6 className="steps_number">2547</h6>
+          <small className="steps_texts">Walked</small>
+        </CircularProgressbarWithChildren>
+      </div>
+      <div className="Steps__info">
         <button className="button" onClick={incrementCount}>
           <PlusIcon />
         </button>
@@ -31,7 +41,7 @@ const Steps = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Steps;
