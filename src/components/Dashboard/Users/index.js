@@ -1,10 +1,8 @@
 import React from "react";
 import "./index.css";
 import Picture from "../../../assets/picture.png";
-import { Data } from "../Data.js";
 
 const Users = (props) => {
-  
   return (
     <div className="user_container">
       <div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ".//index.css";
-import stepsImage from "../../../assets/stepsImage.png";
 import NegativeIcon from "../../Icons/NegativeIcon.js";
 import PlusIcon from "../../Icons/PlusIcon.js";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";

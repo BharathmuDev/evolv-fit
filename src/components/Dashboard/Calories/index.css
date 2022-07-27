@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .number {
@@ -52,3 +53,6 @@
   justify-content: center;
 }
 
+.input {
+  background: #FF96AB;
+}
