@@ -6,7 +6,7 @@ import Steps from "../../components/Dashboard/Steps";
 import Calories from "../../components/Dashboard/Calories";
 import Notification from "../../components/Dashboard/Notification";
 import { Data } from "./Data";
-import userEvent from "@testing-library/user-event";
+
 
 const Dashboard = () => {
   return Data.map((User) => (
@@ -15,13 +15,13 @@ const Dashboard = () => {
         <Users name={User.name} email={User.email}/>
       </div>
       <div>
-        <Steps />
+        <Steps steps={User.steps}/>
       </div>
       <div>
         <Schedules />
       </div>
       <div>
-        <Calories />
+        <Calories calories={User.calories}/>
       </div>
       <div>
         <Notification />

@@ -7,6 +7,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Steps = (props) => {
   const [counter, setCounter] = useState(4);
+  
 
   function incrementCount() {
     setCounter((prevCount) => prevCount + 0.5);
@@ -25,7 +26,7 @@ const Steps = (props) => {
             pathColor: "#7FD18C",
           })}
         >
-          <h6 className="steps_number">2547</h6>
+          <h6 className="steps_number">{props.steps}</h6>
           <small className="steps_texts">Walked</small>
         </CircularProgressbarWithChildren>
       </div>

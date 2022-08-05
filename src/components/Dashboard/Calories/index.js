@@ -47,7 +47,7 @@ const Calories = (props) => {
         <button className="button" onClick={incrementCalories}>
           <PlusIcon />
         </button>
-        <div className="number">{calories}K</div>
+        <div className="number">{props.calories}K</div>
         <div className="target">target</div>
         <button className="button" onClick={decrementCalories}>
           <NegativeIcon />
